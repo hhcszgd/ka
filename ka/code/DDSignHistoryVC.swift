@@ -29,6 +29,12 @@ class DDSignHistoryVC: UIViewController {
                 }else{}
 //                var  shichangHour = jiabanshichang / 3600
                 if jiabanshichang <= 0 {jiabanshichang = 0 }
+                mylog(jiabanshichang)
+                let sult = jiabanshichang.truncatingRemainder(dividingBy: 1800)
+//                mylog(sult)
+//                mylog(jiabanshichang)
+//                mylog(jiabanshichang - sult)
+                jiabanshichang = jiabanshichang - sult//不满半个小时的部分不算
                 totalTimeInterval += jiabanshichang
                 jiabanArr.append(jiabanshichang)
             }
@@ -185,7 +191,7 @@ class SignHistoryCell: UITableViewCell {
                 }else if weakDayStr == "2"{
                     weakDay.text = "周一   \(dayStr)号"
                     weakDay.textColor = UIColor.gray
-                    jiabanshichang  -= 30600
+                    jiabanshichang  -= 30600//工作日加够三个小时以上才算加班
                     if jiabanshichang >= 10800{
                         timeInterval.textColor = UIColor.orange
                     }else{timeInterval.textColor = UIColor.lightGray}
@@ -243,6 +249,11 @@ class SignHistoryCell: UITableViewCell {
                 if jiabanshichang  < 0 {
                     jiabanshichang  = 0
                 }
+                let sult = jiabanshichang.truncatingRemainder(dividingBy: 1800)
+                //                mylog(sult)
+                //                mylog(jiabanshichang)
+                //                mylog(jiabanshichang - sult)
+                jiabanshichang = jiabanshichang - sult//不满半个小时的部分不算
                 let shichangHour = String(format: "%.03f", (jiabanshichang) / 3600)
 //                let shichangHour = "\(Int(time.signout - time.signin) / 3600 )"
 //                let shichangMinute = "\(Int(time.signout - time.signin) % 3600 / 60)"
