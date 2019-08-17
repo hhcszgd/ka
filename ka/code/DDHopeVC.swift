@@ -39,6 +39,8 @@ class DDHopeVC: UIViewController {
         }
     }
     func randomLeNum()  {
+        label1.frame = CGRect(x: 0, y: 300, width: UIScreen.main.bounds.width * 0.6, height: 44)
+        label2.frame = CGRect(x: label1.frame.maxX, y: 300, width: UIScreen.main.bounds.width * 0.4, height: 44)
         label1.textColor = UIColor.blue
         label2.textColor = UIColor.red
         let leFrontNum = ["title01":01 , "title02":02, "title03":03 , "title04":04,
@@ -65,7 +67,7 @@ class DDHopeVC: UIViewController {
             }
         }
         for  (_ , n)    in frantNumArr.enumerated() {
-            frantNumStr +=  String(format: "    %02d", n)
+            frantNumStr +=  String(format: "   %02d", n)
         }
         for (index , dict ) in leBackNum.enumerated() {
             backNumArr.append(dict.value)
@@ -75,7 +77,7 @@ class DDHopeVC: UIViewController {
             }
         }
         for  (_ , n)    in backNumArr.enumerated() {
-            backNumStr +=  String(format: "    %02d", n)
+            backNumStr +=  String(format: "   %02d", n)
         }
         print(frantNumStr)
         print(backNumStr)
@@ -83,6 +85,8 @@ class DDHopeVC: UIViewController {
         label2.text = backNumStr
     }
     func randomShuangNum()  {
+        label1.frame = CGRect(x: 0, y: 300, width: UIScreen.main.bounds.width * 0.7, height: 44)
+        label2.frame = CGRect(x: label1.frame.maxX, y: 300, width: UIScreen.main.bounds.width * 0.7, height: 44)
         label1.textColor = UIColor.red
         label2.textColor = UIColor.blue
         let shuangFrontNum = ["title01":01 , "title02":02, "title03":03 , "title04":04,
@@ -110,7 +114,7 @@ class DDHopeVC: UIViewController {
             }
         }
         for (_ , n)  in frantNumArr.enumerated() {
-            frantNumStr += String(format: "    %02d", n)
+            frantNumStr += String(format: "   %02d", n)
         }
         
         for (index , dict ) in shuangBackNum.enumerated() {
@@ -121,7 +125,7 @@ class DDHopeVC: UIViewController {
             }
         }
         for  (_ , n)    in backNumArr.enumerated() {
-            backNumStr += String(format: "    %02d", n)
+            backNumStr += String(format: "   %02d", n)
         }
         print(frantNumStr)
         print(backNumStr)
