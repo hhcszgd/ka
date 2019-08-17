@@ -17,6 +17,22 @@ class DDHomeVC: UIViewController {
         updateSignUI()
         configNaviBar()
         addTimer()
+        configLeftBarbuttonItem()
+    }
+    func configLeftBarbuttonItem()  {
+            let editBtn = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 64, height: 44))
+            editBtn.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+            //        editBtn.setImage(UIImage.init(named: "history"), for: UIControl.State.normal)
+            editBtn.setTitle("hope", for: UIControl.State.normal)
+            editBtn.setTitle("hope", for: UIControl.State.selected)
+            editBtn.backgroundColor = UIColor.clear
+            editBtn.addTarget(self, action: #selector(editAction(sender:)), for: UIControl.Event.touchUpInside)
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: editBtn)
+            
+    }
+    @objc func editAction(sender:UIButton)  {
+        mylog("xxxx")
+        self.navigationController?.pushViewController(DDHopeVC(), animated: true)
     }
     func configNaviBar() {
         let editBtn = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 64, height: 44))

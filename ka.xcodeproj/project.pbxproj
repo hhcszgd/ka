@@ -17,6 +17,7 @@
 		15091F1422E937A200F5BA9D /* DDHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15091F1322E937A200F5BA9D /* DDHomeVC.swift */; };
 		15091F1622E9466900F5BA9D /* DDStorgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15091F1522E9466900F5BA9D /* DDStorgeManager.swift */; };
 		15091F1822E9939500F5BA9D /* DDSignHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15091F1722E9939500F5BA9D /* DDSignHistoryVC.swift */; };
+		1512D46F2307C4CA00014C0A /* DDHopeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512D46E2307C4CA00014C0A /* DDHopeVC.swift */; };
 		1516E32D22EA8F1B00F981B3 /* DDAlertContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516E32C22EA8F1B00F981B3 /* DDAlertContainer.swift */; };
 		1516E32F22EA8FBE00F981B3 /* DDYMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516E32E22EA8FBE00F981B3 /* DDYMAlert.swift */; };
 		1516E33122EAA79600F981B3 /* DDEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516E33022EAA79600F981B3 /* DDEditVC.swift */; };
@@ -59,6 +60,7 @@
 		15091F1322E937A200F5BA9D /* DDHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDHomeVC.swift; sourceTree = "<group>"; };
 		15091F1522E9466900F5BA9D /* DDStorgeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStorgeManager.swift; sourceTree = "<group>"; };
 		15091F1722E9939500F5BA9D /* DDSignHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDSignHistoryVC.swift; sourceTree = "<group>"; };
+		1512D46E2307C4CA00014C0A /* DDHopeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDHopeVC.swift; sourceTree = "<group>"; };
 		1516E32C22EA8F1B00F981B3 /* DDAlertContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDAlertContainer.swift; sourceTree = "<group>"; };
 		1516E32E22EA8FBE00F981B3 /* DDYMAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDYMAlert.swift; sourceTree = "<group>"; };
 		1516E33022EAA79600F981B3 /* DDEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDEditVC.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				15091F1522E9466900F5BA9D /* DDStorgeManager.swift */,
 				15091F1722E9939500F5BA9D /* DDSignHistoryVC.swift */,
 				1516E33022EAA79600F981B3 /* DDEditVC.swift */,
+				1512D46E2307C4CA00014C0A /* DDHopeVC.swift */,
 			);
 			path = code;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				15091F1422E937A200F5BA9D /* DDHomeVC.swift in Sources */,
 				15091EE722E9366100F5BA9D /* ViewController.swift in Sources */,
 				15091EE522E9366100F5BA9D /* AppDelegate.swift in Sources */,
+				1512D46F2307C4CA00014C0A /* DDHopeVC.swift in Sources */,
 				15091F1622E9466900F5BA9D /* DDStorgeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
