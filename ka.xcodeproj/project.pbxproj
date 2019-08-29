@@ -21,6 +21,7 @@
 		1516E32D22EA8F1B00F981B3 /* DDAlertContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516E32C22EA8F1B00F981B3 /* DDAlertContainer.swift */; };
 		1516E32F22EA8FBE00F981B3 /* DDYMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516E32E22EA8FBE00F981B3 /* DDYMAlert.swift */; };
 		1516E33122EAA79600F981B3 /* DDEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516E33022EAA79600F981B3 /* DDEditVC.swift */; };
+		15AC9C502317C33E00C2C6F2 /* AddFireAssistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AC9C4F2317C33E00C2C6F2 /* AddFireAssistent.swift */; };
 		70ECFD6300AAA85E408C8C97 /* Pods_ka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2289845A14C077F2AE30CC54 /* Pods_ka.framework */; };
 		7DB3FF03203461671EAC9EE7 /* Pods_kaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32FA67E1F3EC75DCAF74DD /* Pods_kaTests.framework */; };
 		D9697265B3FCACA4EF8391F5 /* Pods_kaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB33B1AF2BF875184546E985 /* Pods_kaUITests.framework */; };
@@ -64,6 +65,7 @@
 		1516E32C22EA8F1B00F981B3 /* DDAlertContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDAlertContainer.swift; sourceTree = "<group>"; };
 		1516E32E22EA8FBE00F981B3 /* DDYMAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDYMAlert.swift; sourceTree = "<group>"; };
 		1516E33022EAA79600F981B3 /* DDEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDEditVC.swift; sourceTree = "<group>"; };
+		15AC9C4F2317C33E00C2C6F2 /* AddFireAssistent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFireAssistent.swift; sourceTree = "<group>"; };
 		2289845A14C077F2AE30CC54 /* Pods_ka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCCC94EA482DC8B9DCA8A3C /* Pods-ka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ka.release.xcconfig"; path = "Target Support Files/Pods-ka/Pods-ka.release.xcconfig"; sourceTree = "<group>"; };
 		3FA767D890ABF6B9F8297724 /* Pods-kaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaUITests.debug.xcconfig"; path = "Target Support Files/Pods-kaUITests/Pods-kaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		1516E32B22EA8F0200F981B3 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				15AC9C4F2317C33E00C2C6F2 /* AddFireAssistent.swift */,
 				1516E32C22EA8F1B00F981B3 /* DDAlertContainer.swift */,
 				1516E32E22EA8FBE00F981B3 /* DDYMAlert.swift */,
 			);
@@ -427,6 +430,7 @@
 				1516E32D22EA8F1B00F981B3 /* DDAlertContainer.swift in Sources */,
 				15091F1822E9939500F5BA9D /* DDSignHistoryVC.swift in Sources */,
 				1516E32F22EA8FBE00F981B3 /* DDYMAlert.swift in Sources */,
+				15AC9C502317C33E00C2C6F2 /* AddFireAssistent.swift in Sources */,
 				15091F1422E937A200F5BA9D /* DDHomeVC.swift in Sources */,
 				15091EE722E9366100F5BA9D /* ViewController.swift in Sources */,
 				15091EE522E9366100F5BA9D /* AppDelegate.swift in Sources */,

@@ -6,7 +6,7 @@ import UIKit
 class DDHomeVC: UIViewController {
     var timer : Timer?
     var currentTime : TimeInterval = 0
-    let signButton = UIButton()
+    let signButton = MyButton()
     let signinLabel = UILabel()
     let signoutLabel = UILabel()
     let shichangLabel = UILabel()
@@ -18,6 +18,14 @@ class DDHomeVC: UIViewController {
         configNaviBar()
         addTimer()
         configLeftBarbuttonItem()
+    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        super.touchesBegan(touches, with: event)
+//        AddFireAssistent.share.startFireFlowerWithTouches(touches: touches)
+//    }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("touche moved ")
+        AddFireAssistent.share.startByTouches(touches)
     }
     func configLeftBarbuttonItem()  {
             let editBtn = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 64, height: 44))
@@ -46,7 +54,7 @@ class DDHomeVC: UIViewController {
     @objc func goSignHistory(sender:UIButton) {
         self.navigationController?.pushViewController(DDSignHistoryVC(), animated: true)
     }
-    @objc func signAction(sender:UIButton) {
+    @objc func signAction(sender:MyButton) {
         if currentTime <= 0 {
             return
         }
@@ -106,6 +114,7 @@ class DDHomeVC: UIViewController {
     func configSubviews()  {
         self.view.backgroundColor = UIColor.white
         self.view.addSubview(signButton)
+        signButton.adjustsImageWhenHighlighted = false
         self.view.addSubview(signinLabel)
         self.view.addSubview(signoutLabel)
         self.view.addSubview(shichangLabel)
@@ -124,12 +133,25 @@ class DDHomeVC: UIViewController {
     }
     func layoutCustomSubviews() {
         let signButtonWH = self.view.bounds.width * 0.9
-        signButton.frame = CGRect(x: self.view.bounds.width/2 - signButtonWH/2 , y:  (self.view.bounds.height - signButtonWH * 1.3 ) / 2  , width: signButtonWH, height: signButtonWH)
-        signinLabel.frame = CGRect(x: 0, y: signButton.frame.maxY + 44, width: self.view.bounds.width, height: 30)
+        signinLabel.frame = CGRect(x: 0, y: 140, width: self.view.bounds.width, height: 30)
         signoutLabel.frame = CGRect(x: 0, y: signinLabel.frame.maxY + 14, width: self.view.bounds.width, height: 30)
         shichangLabel.frame = CGRect(x: 0, y: signoutLabel.frame.maxY + 14, width: self.view.bounds.width, height: 30)
+        
+        signButton.frame = CGRect(x: self.view.bounds.width/2 - signButtonWH/2 , y:  (self.view.bounds.height - signButtonWH * 1.11 )   , width: signButtonWH, height: signButtonWH)
     }
     deinit {
         self.removeTimer()
     }
+}
+
+class MyButton: UIButton {
+  
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        AddFireAssistent.share.startFireFlowerWithTouches(touches: touches)
+    }
+//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        print("touche moved ")
+//        AddFireAssistent.share.startByTouches(touches)
+//    }
 }
